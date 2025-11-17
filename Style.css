@@ -1,0 +1,301 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topnav-left img {
+  height: 70px;
+  width: auto;
+}
+
+.topnav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.topnav-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.topnav-right a:hover {
+  color: orangered; 
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('/images/baby\ gorilla.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 100px; 
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: orangered;
+  color: whitesmoke;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+/* Karibu Section */
+.karibu {
+  background: #ffffff;     
+  color: #000000;          
+  padding: 40px 20px;
+  font-family:  'Georgia', serif;
+}
+
+.karibu-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.karibu h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.karibu p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;              
+  margin-bottom: 0%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .karibu {
+    padding: 50px 15px;
+  }
+
+  .karibu h1 {
+    font-size: 2.2rem;
+  }
+
+  .karibu p {
+    font-size: 1rem;
+  }
+}
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #ffffff;
+  color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  font-family:  'Georgia', serif;
+  margin-top: 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+/* GRID */
+.why-choose-us .row {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin-top: 3%;
+}
+
+/* Cards */
+.why-col {
+  background: orangered;
+  padding: 20px 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  flex-basis: 31%;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+
+/* Hover */
+.why-col:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+/* Icons */
+.icon {
+  font-size: 40px;
+  color: #ea470b;  
+  margin-bottom: 15px;
+}
+
+/* Text */
+.why-col h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.why-col p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+.why-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .why-choose-us .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose-us .row {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-us {
+    padding: 60px 20px;
+  }
+}
+/* Popular Safaris Section */
+.Popular-Safaris {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  font-family: 'Georgia', serif;
+}
+
+.Popular-Safaris h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.Popular-Safaris p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Grid */
+.Popular-Safaris .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Safari Cards */
+.popular-safaris-col {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.popular-safaris-col:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Images */
+.popular-safaris-col img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Titles */
+.popular-safaris-col h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #111;
+  font-weight: 700;
+}
+
+/* Text */
+.popular-safaris-col p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .Popular-Safaris .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Popular-Safaris .row {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-safaris-col img {
+    height: 200px;
+  }
+}
