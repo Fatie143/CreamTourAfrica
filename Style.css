@@ -1,0 +1,469 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topnav-left img {
+  height: 70px;
+  width: auto;
+}
+
+.topnav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.topnav-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.topnav-right a:hover {
+  color: orangered; 
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('/images/mum&baby.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 100px; 
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: orangered;
+  color: whitesmoke;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+/* Karibu Section */
+.karibu {
+  background: #ffffff;     
+  color: #000000;          
+  padding: 40px 20px;
+  font-family:  'Georgia', serif;
+}
+
+.karibu-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.karibu h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.karibu p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;              
+  margin-bottom: 0%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .karibu {
+    padding: 50px 15px;
+  }
+
+  .karibu h1 {
+    font-size: 2.2rem;
+  }
+
+  .karibu p {
+    font-size: 1rem;
+  }
+}
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #ffffff;
+  color: #000;
+  padding: 60px 40px;
+  text-align: center;
+  font-family:  'Georgia', serif;
+  margin-top: 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+/* GRID */
+.why-choose-us .row {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin-top: 3%;
+}
+
+/* Cards */
+.why-col {
+  background: orangered;
+  padding: 20px 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  flex-basis: 31%;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+
+/* Hover */
+.why-col:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+/* Icons */
+.icon {
+  font-size: 40px;
+  color: #ea470b;  
+  margin-bottom: 15px;
+}
+
+/* Text */
+.why-col h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.why-col p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+.why-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .why-choose-us .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose-us .row {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-us {
+    padding: 60px 20px;
+  }
+}
+/* Popular Safaris Section */
+.Popular-Safaris {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  font-family: 'Georgia', serif;
+}
+
+.Popular-Safaris h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.Popular-Safaris p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Grid */
+.Popular-Safaris .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Safari Cards */
+.popular-safaris-col {
+  background: #fff;
+  border-radius: 12px;
+  width: 300px;
+  max-width: 300px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.popular-safaris-col:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Images */
+.popular-safaris-col img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Titles */
+.popular-safaris-col h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #111;
+  font-weight: 700;
+}
+
+/* Text */
+.popular-safaris-col p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .Popular-Safaris .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Popular-Safaris .row {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-safaris-col img {
+    height: 200px;
+  }
+}
+.read-more-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #ea470b;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #c93b08;
+}
+.popular-safaris {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  font-family: 'Georgia', serif;
+}
+
+/* Container */
+.popular-safaris .row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Each Card */
+.popular-safaris-col {
+  width: 300px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.popular-safaris-col:hover {
+  transform: translateY(-8px);
+}
+
+/* Fix the stretched image */
+.popular-safaris-image {
+  width: 100%;
+  height: 200px;     
+  object-fit: cover; 
+  border-bottom: 0;
+}
+
+/* Text Layer */
+.layer {
+  padding: 20px;
+  text-align: left;
+}
+
+.layer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.layer p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #d36f0b;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.read-more-btn:hover {
+  background: #b95e08;
+}
+.iconic-safari-experiences {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.iconic-safari-experiences h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.iconic-safari-experiences p {
+  font-size: 17px;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.iconic-col {
+  flex-basis: 30%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.iconic-col:hover {
+  transform: translateY(-10px);
+}
+
+.iconic-col img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.iconic-col h3 {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.iconic-col p {
+  padding: 0 20px;
+  font-size: 15px;
+  color: #666;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fa{
+  color: #ea470b;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart-o{
+  color: #ea470b;
+}
