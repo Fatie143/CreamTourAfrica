@@ -43,7 +43,11 @@ body, ul {
 /* Hero Section */
 .hero {
   height: 100vh;
+<<<<<<< HEAD
   background: url('/images/mum&baby.jpg') center center/cover no-repeat;
+=======
+  background: url('/images/baby\ gorilla.jpg') center center/cover no-repeat;
+>>>>>>> e5c34f32bcd18c52054413c36a506bfcdc385daf
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +126,11 @@ body, ul {
 .why-choose-us {
   background: #ffffff;
   color: #000;
+<<<<<<< HEAD
   padding: 60px 40px;
+=======
+  padding: 10px 20px;
+>>>>>>> e5c34f32bcd18c52054413c36a506bfcdc385daf
   text-align: center;
   font-family:  'Georgia', serif;
   margin-top: 0;
@@ -146,7 +154,10 @@ body, ul {
 /* GRID */
 .why-choose-us .row {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+>>>>>>> e5c34f32bcd18c52054413c36a506bfcdc385daf
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   max-width: 1200px;
@@ -238,6 +249,7 @@ body, ul {
 
 /* Grid */
 .Popular-Safaris .row {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -245,18 +257,32 @@ body, ul {
   gap: 30px;
   flex-wrap: wrap;
   width: 100%;
+=======
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1200px;
+>>>>>>> e5c34f32bcd18c52054413c36a506bfcdc385daf
   margin: 0 auto;
 }
 
 /* Safari Cards */
 .popular-safaris-col {
   background: #fff;
+<<<<<<< HEAD
   border-radius: 12px;
   width: 300px;
   max-width: 300px;
   padding: 20px;
   overflow: hidden;
   box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+=======
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+>>>>>>> e5c34f32bcd18c52054413c36a506bfcdc385daf
 }
 
 .popular-safaris-col:hover {
@@ -303,6 +329,7 @@ body, ul {
   .popular-safaris-col img {
     height: 200px;
   }
+<<<<<<< HEAD
 }
 .read-more-btn {
   display: inline-block;
@@ -467,3 +494,6 @@ body, ul {
 .fa-heart-o{
   color: #ea470b;
 }
+=======
+}
+>>>>>>> e5c34f32bcd18c52054413c36a506bfcdc385daf
